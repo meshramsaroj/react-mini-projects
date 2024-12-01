@@ -1,0 +1,138 @@
+/* common classes */
+.text-danger {
+  color: var(--danger);
+}
+
+.border-danger {
+  border-color: var(--danger) !important;
+}
+
+.active {
+  border: 2px solid var(--active);
+}
+
+.text-secondary {
+  color: gray;
+}
+
+.p-0 {
+    padding: 0;
+}
+.m-0 {
+    margin: 0;
+}
+/* end */
+
+.todo-list-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+.todo-card {
+  display: flex;
+  gap: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 1px 4px 3px 0px #ccc;
+  background: var(--white);
+  margin: 10px;
+  justify-content: space-between;
+  width: 250px;
+  height: 200px;
+  flex-direction: column;
+  word-wrap: break-word;
+}
+.todo-massage {
+    height: 90px;
+    overflow-y: auto;
+}
+.todo-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.edit-todo {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.action-button {
+  display: flex;
+  gap: 5px;
+  justify-content: flex-end;
+}
+
+.action-button button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.action-button .btn-edit {
+  color: green;
+}
+
+.action-button .btn-delete {
+  color: var(--danger);
+}
+
+.btn-default {
+  background: var(--black);
+  color: var(--white);
+  border-radius: 4px;
+  width: 100px;
+  height: 30px;
+}
+
+/* start floating input label */
+.input-group {
+  position: relative;
+}
+
+.input-group label {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: var(--black);
+  padding: 0 5px;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.input-group input {
+  height: 50px;
+}
+
+.input-group textarea {
+  min-height: 100px;
+  height: auto;
+}
+.input-group input,
+.input-group textarea {
+  width: 300px;
+  font-size: 16px;
+  color: var(--black);
+  padding: 10px 15px;
+  background: transparent;
+  border: 1.2px solid var(--black);
+  outline: none;
+  border-radius: 5px;
+}
+
+.input-group input:focus ~ label,
+.input-group input:valid ~ label,
+.input-group textarea:focus ~ label,
+.input-group textarea:valid ~ label {
+  top: 0;
+  font-size: 14px;
+  background: #f2f2f2;
+}
+/* end */
