@@ -1,4 +1,15 @@
 .layout-container {
-  padding: 25px;
   background: #f2f2f2;
+}
+
+.h2 {
+  @apply text-2xl font-semibold my-2
+}
+
+.card {
+  @apply w-full bg-white shadow-md p-3 rounded-sm relative
+}
+
+.card-footer {
+  @apply absolute bottom-1
 }

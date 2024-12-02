@@ -25,7 +25,7 @@ const TodoItem = ({
     <div
       key={todo.id}
       className={
-        "todo-card " + todoData && todoData.id === todo.id ? "active" : ""
+        `todo-card ${todoData && todoData.id === todo.id ? "active" : ""}`
       }
     >
       <div className="todo-content">
